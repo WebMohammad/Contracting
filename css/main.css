@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'font2';
+}
+h2{
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.row{
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+}
+ul , li{
+    list-style: none;
+}
+
+/* css for header */
+.header{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+}
+.header > img{
+    width: 15%;
+    margin-left: 10%;
+}
+
+
+
+/* css for menu */
+.menu{
+    width: 100%;
+    height: auto;
+    background-color: darkslategray;
+    position: relative;
+}
+.menu > ul{
+    margin-left: 5%;
+}
+.menu > ul > li{
+    width: 100px;
+    height: 40px;
+    color: rgb(234, 234, 234);
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 40px;
+    border-left: 2px solid black;
+    float: left;
+}
+.menu li:first-child{
+    border: none;
+}
+.menu > ul > li:hover{
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* service menu list */
+.menu > ul > li:nth-child(3) > ul{
+    background-color: darkslategray;
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.menu > ul > li:nth-child(3):hover > ul{
+    visibility: visible;
+    opacity: 1;
+    font-weight: normal;
+    cursor: pointer;
+    font-weight: bolder;
+    color: rgb(234, 234, 234) ;
+    transition: 1s;
+}
+.menu > ul > li:nth-child(3) > ul > li:hover{
+    color: white;
+}
+
+
+/* css for service row */
+.service{
+    padding: 5%;
+}
+.service > h2 {
+    width: 18%;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid gold;
+    padding-bottom: 2%;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.service > div{
+    width: 26.6666%;
+    height: auto;
+    display: inline-block;
+    margin: 5% 0 0 5%;
+}
+.service h3{
+    border-bottom: 2px solid gold;
+    padding-bottom: 2%;
+    margin-top: 2%;
+}
+.service img:hover{
+    opacity: 0.3;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.service p {
+    color: gray;
+    font-size: 15px;
+    text-justify: inherit;
+    margin-top: 2%;
+}
+
+
+/* css for about row */
+.about{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: url(../image/house-wire-model-fade-white-1500x1085.png) no-repeat center center rgb(32, 51, 51);
+    background-size: cover;
+    background-origin: initial;
+    padding: 5% 5% 10%;
+}
+.about > h2{
+    width: 12%;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 30px;
+    border-bottom: 2px solid gold;
+    padding-bottom: 2%;
+}
+.about > div{
+    width: 100%;
+    height: auto;
+    
+}
+.about .box{
+    width: 23.3333%;
+    margin-left: 10%;
+    margin-top: 5%;
+    float: left;
+    position: relative;
+    color: whitesmoke;
+}
+.about .box > div{
+    width: 60px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    position: absolute;
+    left: -70px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 35px;
+}
+
+
+/* css for gallery row */
+.gallery{
+    width: 100%;
+    background-color: white;
+    padding: 5% 3% 5% 2%;
+}
+.gallery h2{
+    width: 17%;
+    font-size: 30px;
+    text-align: center;
+    margin: auto auto 5% auto;
+    border-bottom: 2px solid gold;
+}
+.gallery .box{
+    width: 32.3333%;
+    height: 360px;
+    margin-left: 1%;
+    margin-top: 1%;
+    float: left;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.gallery img{
+    height: 100%;
+    opacity: 0.7;
+}
+.gallery img:hover{
+    opacity: 1;
+    transition: 0.7s;
+}
+.gallery .box::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    border: 10px solid transparent;
+    border-bottom: 10px solid whitesmoke;
+    position: absolute;
+    top: 100%;
+}
+.gallery h3{
+    width: 100%;
+    height: 65px;
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 65px;
+    position: absolute;
+    bottom: -20%;
+    text-transform: capitalize;
+}
+.gallery .box:hover::after{
+    top: 77%;
+    transition: 0.7s;
+}
+.gallery .box:hover > h3{
+    bottom: 0;
+    transition: 0.7s;
+}
+
+
+/* css for row + platforms web side does work on */
+.platforms{
+    width: 100%;
+    height: auto;
+    padding: 0% 5% 10% 5%;
+}
+.platforms > h2{
+    width: 26%;
+    font-size: 30px;
+    margin: 0 auto 5%;
+    text-align: center;
+    border-bottom: 2px solid gold;
+}
+.platforms > div{
+    width: 100%;
+    background-color: grey;
+}
+.platforms img{
+    width: 25%;
+    float: left;
+    border: 0.25px solid rgb(210, 209, 209);
+}
+
+
+/* css for footer row */
+.footer{
+    width: 100%;
+    background-color: rgb(32, 51, 51);
+    padding: 5%;
+}
+.footer > div {
+    width: 100%;
+}
+.footer .box{
+    width: 23%;
+    margin-left: 2%;
+    float: left;
+    position: relative;
+}
+.footer h3{
+    width: 100%;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 2% 0;
+    margin-bottom: 4%;
+}
+.footer p , .footer ul{
+    font-size: 15px;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+.footer li > div{
+    display: inline-block;
+}
+.footer li > img{
+    border: 2px solid gray;
+    margin-right: 3%;
+    margin-top: 3%;
+}

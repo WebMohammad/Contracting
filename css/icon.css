@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'web1icon';
+  src:  url('../font/web1icon.eot?q2gjhe');
+  src:  url('../font/web1icon.eot?q2gjhe#iefix') format('embedded-opentype'),
+    url('../font/web1icon.ttf?q2gjhe') format('truetype'),
+    url('../font/web1icon.woff?q2gjhe') format('woff'),
+    url('../font/web1icon.svg?q2gjhe#web1icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'web1icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Interface_005_Text-Alignment-01:before {
+  content: "\e900";
+}
+.icon-Interface_007_Swatch-01:before {
+  content: "\e901";
+}
+.icon-Interface_012_Settings-01:before {
+  content: "\e902";
+}
+.icon-Interface_032_Help-01:before {
+  content: "\e903";
+}
+.icon-Interface_038_Credit-Card-01:before {
+  content: "\e904";
+}
+.icon-Interface_047_Command-01:before {
+  content: "\e905";
+}
